@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #courses-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .course {
+    width: calc(33.333% - 1rem);
+  }
+}

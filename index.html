@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Course Home Page for WDD231" />
+    <meta name="author" content="Your Name" />
+    <title>WDD231 Course Home Page</title>
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    WDD 232
+    <header>
+        <img src="images/dv-logo.svg" alt="Logo" width="125" class="logo">
+        <span>DAVID'S VENTURES</span>
+        <button id="menu-toggle">&#9776;</button>
+    </header>
+
+    <nav id="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <div class="full-width-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="content-box">
+                <p>My name is Esumei David. I am from Nigeria, leaving in lagos.
+                    A student of BYU pathway. studying Software development.My hobbies
+                    are writing, drawing and singing.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="full-width-heading">
+                <h2>Student Photo</h2>
+            </div>
+            <div class="content-box">
+                <img src="images/student-photo.png" alt="Photo of Esumei David" class="student-photo">
+            </div>
+        </section>
+
+
+        <section>
+            <div class="full-width-heading">
+                <h2>Certificate Courses</h2>
+            </div>
+            <div id="course-filters">
+                <button id="all-btn">All Courses</button>
+                <button id="wdd-btn">WDD Courses</button>
+                <button id="cse-btn">CSE Courses</button>
+            </div>
+            <div id="courses-container"></div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Esumei David | Nigeria </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
