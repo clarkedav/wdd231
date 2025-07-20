@@ -1,9 +1,9 @@
 const courses = [
-    { code: "WDD130", name: "Web Fundamentals", credits: 3, completed: true },
-    { code: "WDD231", name: "Frontend Development I", credits: 3, completed: false },
-    { code: "CSE110", name: "Programming Principles", credits: 4, completed: true },
-    { code: "CSE210", name: "Programming with Classes", credits: 4, completed: false },
-    { code: "WDD330", name: "Frontend Development II", credits: 3, completed: false }
+    { code: "WDD130", name: "Web Fundamentals", credits: 2, completed: true },
+    { code: "WDD231", name: "Frontend Development I", credits: 2, completed: false },
+    { code: "CSE110", name: "Introduction to Programming", credits: 2, completed: true },
+    { code: "CSE210", name: "Programming with Classes", credits: 2, completed: false },
+    { code: "WDD131", name: "Dynamic Wed Fundamentals", credits: 2, completed: false }
 ];
 
 const courseContainer = document.getElementById("courses-container");
@@ -32,3 +32,4 @@ document.getElementById("cse-btn").addEventListener("click", () =>
 );
 
 renderCourses(courses); // initial render
+

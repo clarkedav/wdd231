@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="WDD231-Chamber of Commerce Site" />
     <meta name="author" content="Esumei David" />
+
     <title>WDD231 Course Home Page</title>
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -18,7 +22,7 @@
 
 <body>
     <header>
-        <img src="images/dv-logo.svg" alt="Logo" width="125" class="logo">
+        <img src="images/dv-logo.svg" alt="Logo for the site" width="125" class="logo">
         <span>DAVID'S VENTURES</span>
         <button id="menu-toggle">&#9776;</button>
     </header>
@@ -31,27 +35,29 @@
 
     <main>
         <h1>Home</h1>
+        <div class="double-section">
+            <section class="info-coloumn">
+                <div class="full-width-heading">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content-box">
+                    <p>My name is Esumei David. I am from Nigeria, leaving in lagos.
+                        A student of BYU pathway. studying Software development.My hobbies
+                        are writing, drawing and singing.
+                    </p>
+                </div>
+            </section>
 
-        <section>
-            <div class="full-width-heading">
-                <h2>About Me</h2>
-            </div>
-            <div class="content-box">
-                <p>My name is Esumei David. I am from Nigeria, leaving in lagos.
-                    A student of BYU pathway. studying Software development.My hobbies
-                    are writing, drawing and singing.
-                </p>
-            </div>
-        </section>
+            <section class="info-coloumn">
+                <div class="full-width-heading">
+                    <h2>Student Photo</h2>
+                </div>
+                <div class="content-box">
+                    <img src="images/student-photo.png" alt="Photo of Esumei David" class="student-photo">
+                </div>
+            </section>
+        </div>
 
-        <section>
-            <div class="full-width-heading">
-                <h2>Student Photo</h2>
-            </div>
-            <div class="content-box">
-                <img src="images/student-photo.png" alt="Photo of Esumei David" class="student-photo">
-            </div>
-        </section>
 
 
         <section>
