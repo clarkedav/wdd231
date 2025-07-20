@@ -84,12 +84,13 @@ footer {
 
 .course {
     padding: 1rem;
-    border: 1px solid #28a745;
+    border: 1px solid #59c174;
+    text-align: center;
 }
 
 .completed {
     background-color: #d4edda;
-    border-color: #28a745;
+    border-color: #59c174;
 }
 
 .student-photo {
@@ -130,17 +131,13 @@ section {
 .double-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-}
-/*
-.info {
-    flex-basis: 65%;
+    gap: 2rem;
 }
 
-.photo {
-    flex-basis: 35%;
-} */
-
-.info-coloumn {
+.info-column {
     flex: 1 1 60%;
+}
+
+.info-photo {
+    flex: 1 1 10%;
 }
