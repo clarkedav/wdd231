@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 
+/* Header */
 header {
   background: #2c2e48;
   color: white;
@@ -31,6 +32,7 @@ header {
   white-space: nowrap;
 }
 
+/* Navigation */
 nav {
   display: flex;
   flex-direction: column;
@@ -48,17 +50,38 @@ nav a.active {
   text-decoration: underline;
 }
 
-
-
+/* Hamburger Menu */
 #menu-toggle {
   background: none;
   border: none;
   color: white;
   font-size: 2rem;
-  display: none;
   cursor: pointer;
   display: block;
   margin-left: auto;
+}
+
+/* Mobile Nav */
+#main-nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #444;
+}
+
+#main-nav.show {
+  display: flex;
+}
+
+/* Responsive Nav for Desktop */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
 }
 
 /* View Toggle Buttons */
@@ -75,8 +98,8 @@ nav a.active {
 /* Directory Layout */
 #directory.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   padding: 1rem;
 }
 
@@ -87,46 +110,69 @@ nav a.active {
   padding: 1rem;
 }
 
+/* Responsive Directory Columns */
+@media (max-width: 768px) {
+  #directory.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 480px) {
+  #directory.grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Directory Cards */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.member-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.card-info {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Responsive Card Adjustments */
+@media (max-width: 600px) {
+  .card-content {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 300px;
+  }
+}
+
+/* Footer */
 footer {
   background: #2c2e48;
   color: white;
   text-align: center;
   padding: 1rem;
-}
-
-/* Responsive */
-@media (min-width: 768px) {
-  nav {
-    flex-direction: row;
-  }
-
-  #menu-toggle {
-    display: none;
-  }
-}
-
-/* Show nav vertically for mobile, but hidden by default */
-#main-nav {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  background-color: #444;
-}
-
-#main-nav.show {
-  display: flex;
-}
-
-/* Mobile hamburger menu always visible below 768px */
-#menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
 }
 
 .footer-container {
@@ -143,7 +189,6 @@ footer {
   color: white;
 }
 
-/* Social Media Icons */
 .footer-center a {
   margin: 0 0.5rem;
 }
@@ -154,7 +199,7 @@ footer {
   filter: brightness(0) invert(1);
 }
 
-/* Responsive: horizontal layout for larger screens */
+/* Footer Responsive Layout */
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
@@ -175,65 +220,5 @@ footer {
 
   .footer-right {
     text-align: right;
-  }
-}
-
-.card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.card-content {
-  display: flex;
-  align-items: flex-start;
-   flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.member-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-
-.card-info {
-  flex: 1 1 0;
-  min-width: 0;
-}
-
-@media (max-width: 600px) {
-  .card-content {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: center;
-  }
-
-  .member-image {
-    width: 120px;
-    height: 300px;
-  }
-}
-#directory.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem; /* or any spacing you prefer */
-  padding: 1rem;
-}
-@media (max-width: 768px) {
-  #directory.grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  #directory.grid {
-    grid-template-columns: 1fr;
   }
 }
