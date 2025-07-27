@@ -12,7 +12,7 @@
     "address": "56 Market Road, Lagos",
     "phone": "+234-702-333-4444",
     "website": "https://betafoods.ng",
-    "image": "beta.jpg",
+    "image": "beta.png",
     "membership": 1
   },
   {
@@ -20,7 +20,64 @@
     "address": "9 Wharf Lane, Lagos",
     "phone": "+234-703-555-6666",
     "website": "https://gammalogistics.com",
-    "image": "gamma.jpg",
+    "image": "gamma.png",
+    "membership": 2
+  },
+  {
+    "name": "Delta Creative Agency",
+    "address": "44 Awolowo Way, Ikeja, Lagos",
+    "phone": "+234-704-222-1234",
+    "website": "https://deltacreative.ng",
+    "image": "delta.png",
+    "membership": 2
+  },
+  {
+    "name": "Eko Medical Center",
+    "address": "12 Hospital Road, Victoria Island, Lagos",
+    "phone": "+234-705-987-6543",
+    "website": "https://ekomedical.ng",
+    "image": "eko.png",
+    "membership": 3
+  },
+  {
+    "name": "Naija AgroTech",
+    "address": "200 Farmland Avenue, Abeokuta",
+    "phone": "+234-706-111-8899",
+    "website": "https://naijaagrotech.com",
+    "image": "naijaagro.png",
+    "membership": 1
+  },
+  {
+    "name": "Swift Ride Services",
+    "address": "3 Mobility Crescent, Lekki Phase 1, Lagos",
+    "phone": "+234-707-444-1234",
+    "website": "https://swiftride.ng",
+    "image": "swift.png",
+    "membership": 2
+  },
+  {
+    "name": "Zuma Fashion House",
+    "address": "18 Eleganza Street, Yaba, Lagos",
+    "phone": "+234-708-333-1122",
+    "website": "https://zumafashion.ng",
+    "image": "zuma.png",
+    "membership": 1
+  },
+  {
+    "name": "Orbit Financials",
+    "address": "27 Bank Road, Marina, Lagos",
+    "phone": "+234-709-999-2020",
+    "website": "https://orbitfin.com",
+    "image": "orbit.png",
+    "membership": 3
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "5 Renewable Lane, Ikorodu",
+    "phone": "+234-710-123-4567",
+    "website": "https://greentech.com.ng",
+    "image": "greentech.png",
     "membership": 2
   }
 ]
+
