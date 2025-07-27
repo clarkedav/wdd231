@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Alpha Tech Ltd.",
+    "address": "123 Tech Street, Lagos",
+    "phone": "+234-701-111-2222",
+    "website": "https://alphatech.com",
+    "image": "alpha.png",
+    "membership": 3
+  },
+  {
+    "name": "Beta Foods",
+    "address": "56 Market Road, Lagos",
+    "phone": "+234-702-333-4444",
+    "website": "https://betafoods.ng",
+    "image": "beta.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Gamma Logistics",
+    "address": "9 Wharf Lane, Lagos",
+    "phone": "+234-703-555-6666",
+    "website": "https://gammalogistics.com",
+    "image": "gamma.jpg",
+    "membership": 2
+  }
+]

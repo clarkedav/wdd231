@@ -9,7 +9,7 @@ header {
     gap: 0.5rem;
     align-items: center;
     padding: 1rem 2rem;
-    background: #59c174;
+    background: #4e9b90;
     color: white;
 }
 
@@ -43,8 +43,15 @@ nav a {
     text-decoration: none;
 }
 
+nav a.active {
+    background-color:black; /* Or another distinguishable color */
+    color: #ffff; /* Contrast color */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 nav a:hover {
-    background: #2c2e48;
+    background: #4e5171;
 }
 
 #menu-toggle {
@@ -118,7 +125,7 @@ footer {
 }
 
 .content-box {
-    background-color: #59c174;
+    background-color: #4caf7b;
     padding: 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     height: 72.5%;

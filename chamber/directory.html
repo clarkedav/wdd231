@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Directory of businesses in the Chamber of Commerce for Lagos" />
+    <meta name="author" content="Esumei David" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce Directory" />
+    <meta property="og:description" content="Explore our local business members." />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:url" content="https://your-chamber-site.com/directory.html" />
+
+    <title>Chamber Directory - Lagos Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/dv-logo.svg" alt="Chamber Logo" class="logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle">&#9776;</button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </section>
+
+        <section id="directory" class="grid"></section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <p><b>Lagos Chamber of Commerce</b></p>
+                <p>123 Commerce Road, Lagos</p>
+                <p>info@lagoschamber.org</p>
+                <p>+234-905-6919427</p>
+            </div>
+
+            <!-- Center Section -->
+            <div class="footer-center">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://X.com" target="_blank" aria-label="GitHub">
+                    <img src="images/x.svg" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <p>WDD 231 Class Project</p>
+                 <p>Esumei David</p>
+                <p>© <span id="year"></span> Lagos Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
