@@ -72,7 +72,6 @@ listBtn.addEventListener('click', () => {
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// Run
 fetchMembers();
 
 
