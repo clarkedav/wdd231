@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to the Lagos Chamber of Commerce home page" />
+    <meta name="author" content="Esumei David" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce" />
+    <meta property="og:description" content="Empowering businesses in Lagos through connection and collaboration." />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:url" content="https://your-chamber-site.com/index.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Lagos Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+            document.getElementById("menu-toggle").addEventListener("click", () => {
+                document.getElementById("main-nav").classList.toggle("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/dv-logo.svg" alt="Chamber Logo" class="logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle">&#9776;</button>
+        <nav id="main-nav">
+            <a href="../index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="final.html">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <img src="images/hero.png" alt="Lagos skyline" class="hero-image" />
+            <div class="hero-text">
+                <h2>Empowering Business in Lagos</h2>
+                <a href="join.html" class="cta">Join the Chamber</a>
+            </div>
+        </section>
+
+      <h1><a href="index.html"><stro>Home</br></a></h1>
+
+        <!-- Events Section -->
+        <section id="events" class="card-section">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Business Networking Night – Aug 10</li>
+                <li>Startup Showcase – Sep 2</li>
+                <li>Leadership Summit – Oct 14</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <div id="weather-current" class="card-section">
+                <h2 class="section-heading">Current Weather</h2>
+            </div>
+            <div id="weather-forecast" class="card-section"></div>
+        </section>
+
+
+        <!-- Spotlights -->
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-grid" id="spotlight-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p><b>Lagos Chamber of Commerce</b></p>
+                <p>123 Commerce Road, Lagos</p>
+                <p>info@lagoschamber.org</p>
+                <p>+234-905-6919427</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://x.com" target="_blank" aria-label="Twitter">
+                    <img src="images/x.svg" alt="Twitter" class="social-icon">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD 231 Class Project</p>
+                <p>Esumei David</p>
+                <p>© <span id="year"></span> Lagos Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
