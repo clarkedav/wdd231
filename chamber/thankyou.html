@@ -4,25 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to the Lagos Chamber of Commerce home page" />
+    <meta name="description" content="Thank you for joining the Lagos Chamber of Commerce" />
     <meta name="author" content="Esumei David" />
 
-    <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Lagos Chamber of Commerce" />
-    <meta property="og:description" content="Empowering businesses in Lagos through connection and collaboration." />
-    <meta property="og:image" content="images/dv-logo.svg" />
-    <meta property="og:url" content="https://chamber/index.html" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
-    <title>Lagos Chamber of Commerce</title>
+    <title>Thank You - Lagos Chamber of Commerce</title>
     <link rel="icon" href="images/dv-logo.svg" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/chamber.css" />
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css" />
+     <link rel="stylesheet" href="styles/thankyou.css" />
+
 
     <script defer>
         document.addEventListener('DOMContentLoaded', () => {
@@ -36,6 +27,7 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <div class="logo-title">
             <img src="images/dv-logo.svg" alt="Chamber Logo" class="logo">
@@ -43,52 +35,32 @@
         </div>
         <button id="menu-toggle">&#9776;</button>
         <nav id="main-nav">
-            <a href="../index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <img src="images/hero.png" alt="Lagos skyline" class="hero-image" />
-            <div class="hero-text">
-                <h2>Empowering Business in Lagos</h2>
-                <a href="join.html" class="cta">Join the Chamber</a>
-            </div>
-        </section>
+        <h1>Thank You for Joining!</h1>
+        <p>Your application has been received. We will review your information and get back to you shortly.</p>
 
-        <h1><a href="index.html"><strong>Home</strong></a></h1>
+        <div class="form-data">
+            <p><span class="label">First Name:</span> <span id="firstName"></span></p>
+            <p><span class="label">Last Name:</span> <span id="lastName"></span></p>
+            <p><span class="label">Email:</span> <span id="email"></span></p>
+            <p><span class="label">Mobile Number:</span> <span id="phone"></span></p>
+            <p><span class="label">Business Name:</span> <span id="businessName"></span></p>
+            <p><span class="label">Date Submitted:</span> <span id="timestamp"></span></p>
+        </div>
 
-        <!-- Events Section -->
-        <section id="events" class="card-section">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Business Networking Night – Aug 10</li>
-                <li>Startup Showcase – Sep 2</li>
-                <li>Leadership Summit – Oct 14</li>
-            </ul>
-        </section>
-
-        <!-- Weather Section -->
-        <section id="weather">
-            <div id="weather-current" class="card-section">
-                <h2 class="section-heading">Current Weather</h2>
-            </div>
-            <div id="weather-forecast" class="card-section"></div>
-        </section>
-
-
-        <!-- Spotlights -->
-        <section id="spotlights">
-            <h2>Member Spotlights</h2>
-            <div class="spotlight-grid" id="spotlight-grid"></div>
-        </section>
+        <a href="index.html" class="return-btn">⬅ Return Home</a>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
+            <!-- Left Section -->
             <div class="footer-left">
                 <p><b>Lagos Chamber of Commerce</b></p>
                 <p>123 Commerce Road, Lagos</p>
@@ -96,6 +68,7 @@
                 <p>+234-905-6919427</p>
             </div>
 
+            <!-- Center Section -->
             <div class="footer-center">
                 <a href="https://facebook.com" target="_blank" aria-label="Facebook">
                     <img src="images/facebook.svg" alt="Facebook" class="social-icon">
@@ -103,11 +76,12 @@
                 <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
                 </a>
-                <a href="https://x.com" target="_blank" aria-label="Twitter">
-                    <img src="images/x.svg" alt="Twitter" class="social-icon">
+                <a href="https://X.com" target="_blank" aria-label="GitHub">
+                    <img src="images/x.svg" alt="twitter" class="social-icon">
                 </a>
             </div>
 
+            <!-- Right Section -->
             <div class="footer-right">
                 <p>WDD 231 Class Project</p>
                 <p>Esumei David</p>
@@ -116,6 +90,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('firstName').textContent = localStorage.getItem('firstName') || '';
+            document.getElementById('lastName').textContent = localStorage.getItem('lastName') || '';
+            document.getElementById('email').textContent = localStorage.getItem('email') || '';
+            document.getElementById('phone').textContent = localStorage.getItem('phone') || '';
+            document.getElementById('businessName').textContent = localStorage.getItem('businessName') || '';
+            document.getElementById('timestamp').textContent = localStorage.getItem('timestamp') || '';
+        });
+    </script>
 </body>
 
 </html>

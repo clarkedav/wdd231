@@ -1,0 +1,171 @@
+
+/* ===== Main Content ===== */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow, 0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+main h1 {
+    text-align: center;
+    color: var(--primary-color, #4a148c);
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color, #444);
+}
+
+/* ===== Form Styles ===== */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-form label {
+    font-weight: bold;
+    color: var(--text-color, #333);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color, #4a148c);
+    box-shadow: 0 0 4px rgba(74, 20, 140, 0.3);
+}
+
+.join-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: var(--primary-color, #4a148c);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.join-form input[type="submit"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: var(--primary-color, #4a148c);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+
+
+form {
+    flex: 1 1 300px;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background: #4a148c;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.cards {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.card {
+    background: rgb(226, 193, 111);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+
+.modal {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 1rem;
+    margin: 10% auto;
+    width: 300px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 900;
+    color: orange;
+    text-align: center;
+}
+
+/* Base state: hidden and slightly moved down */
+.membership-card {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Animated state: plays when JS adds "animate" class */
+.membership-card.animate {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggered delays */
+.membership-card.animate:nth-child(1) { animation-delay: 0.2s; }
+.membership-card.animate:nth-child(2) { animation-delay: 0.4s; }
+.membership-card.animate:nth-child(3) { animation-delay: 0.6s; }
+.membership-card.animate:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

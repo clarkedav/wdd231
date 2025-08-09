@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Join the Lagos Chamber of Commerce" />
+    <meta name="author" content="Esumei David" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce" />
+    <meta property="og:description" content="Interested in joining the Lagos Chamber of Commerce" />
+    <meta property="og:image" content="images/dv-logo.svg" />
+    <meta property="og:url" content="https://chamber/join.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Join - Lagos Chamber of Commerce</title>
+    <link rel="icon" href="images/dv-logo.svg" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/join.js"></script>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+            document.getElementById("menu-toggle").addEventListener("click", () => {
+                document.getElementById("main-nav").classList.toggle("show");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-title">
+            <img src="images/dv-logo.svg" alt="Chamber Logo" class="logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle">&#9776;</button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+
+    <h1>Join the Lagos Chamber of Commerce</h1>
+    <p>Complete the form below to become a member and start enjoying the benefits of networking, training, and local
+        business support.</p>
+
+    <main class="join-page">
+
+        <form id="joinForm" action="thankyou.html" method="get" class="join-form">
+            <label>
+                First Name:
+                <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+            <label>
+                Organizational Title:
+                <input type="text" name="orgTitle" title="Your position in the organization"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                    placeholder="example@email.com" required>
+            </label>
+
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+            </label>
+
+            <label>
+                Organization Name:
+                <input type="text" name="organization" title="Enter your organization name" autocomplete="organization"
+                    required>
+            </label>
+
+            <label>
+                Membership Level:
+                <select name="membership" title="Select your membership level" required>
+                    <option value="">Select level</option>
+                    <option value="np">NP Membership (Non-profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                Business Description:
+                <textarea name="description" title="Describe your business or organization"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <section class="membership-cards">
+            <div class="card np">
+                <h3>NP Membership</h3>
+                <p>Perfect for non-profit organizations, free of charge.</p>
+                <a href="#" data-modal="modal-np">More Info</a>
+            </div>
+
+            <div class="card bronze">
+                <h3>Bronze Membership</h3>
+                <p>Affordable entry with essential benefits.</p>
+                <a href="#" data-modal="modal-bronze">More Info</a>
+            </div>
+
+            <div class="card silver">
+                <h3>Silver Membership</h3>
+                <p>Expanded benefits for growing businesses.</p>
+                <a href="#" data-modal="modal-silver">More Info</a>
+            </div>
+
+            <div class="card gold">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits for maximum exposure.</p>
+                <a href="#" data-modal="modal-gold">More Info</a>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p class="price">$0/year</p>
+                <ul>
+                    <li>Free membership</li>
+                    <li>Access to networking events</li>
+                    <li>Community support resources</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p class="price">$100/year</p>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Event discounts</li>
+                    <li>Basic advertising opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p class="price">$200/year</p>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Spotlight positions on homepage</li>
+                    <li>Training and development programs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p class="price">$300/year</p>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium advertising placement</li>
+                    <li>Exclusive VIP networking events</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Set timestamp on page load
+        document.getElementById("timestamp").value = new Date().toISOString();
+
+        // Modal functionality
+        document.querySelectorAll('[data-modal]').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                document.getElementById(link.dataset.modal).style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.close').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.closest('.modal').style.display = 'none';
+            });
+        });
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        };
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p><b>Lagos Chamber of Commerce</b></p>
+                <p>123 Commerce Road, Lagos</p>
+                <p>info@lagoschamber.org</p>
+                <p>+234-905-6919427</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://x.com" target="_blank" aria-label="Twitter">
+                    <img src="images/x.svg" alt="Twitter" class="social-icon">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD 231 Class Project</p>
+                <p>Esumei David</p>
+                <p>© <span id="year"></span> Lagos Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
