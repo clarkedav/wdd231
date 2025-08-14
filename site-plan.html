@@ -78,63 +78,106 @@
             font-size: 0.9rem;
             background-color: #fefefe;
         }
+
+        :root {
+            --rose-pink: #c54b6c;
+            --soft-cream: #fffaf6;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Page background (outside the box) */
+        body {
+            background: #f0f0f3;
+            /* neutral contrast outside the main box */
+        }
+
+        /* The centered full-height box */
+        .site-shell {
+            background: var(--soft-cream);
+            min-height: 100vh;
+            /* fills from top to bottom */
+            max-width: 1000px;
+            /* control line length */
+            margin: 0 auto;
+            /* centers horizontally */
+            padding: 2rem 1.25rem;
+            /* comfy breathing room */
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Optional: keep content nicely sized on large screens */
+        @media (min-width: 768px) {
+            .site-shell {
+                padding: 3rem 2rem;
+            }
+        }
     </style>
 </head>
 
-<body>
-    <h1>StyleSavvy – Everyday Fashion Made Simple</h1>
+    <div class="site-shell">
+        <h1>StyleSavvy – Everyday Fashion Made Simple</h1>
 
-    <section>
-        <h2>Site Name</h2>
-        <p><strong>StyleSavvy</strong> – The name conveys confidence and simplicity in fashion, making it easy for
-            everyday people to look their best without stress. It’s short, memorable, and brand-friendly.</p>
-    </section>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>StyleSavvy</strong> – The name conveys confidence and simplicity in fashion, making it easy for
+                everyday people to look their best without stress. It’s short, memorable, and brand-friendly.</p>
+        </section>
 
-    <section>
-        <h2>Site Purpose</h2>
-        <p>The website helps users improve their everyday fashion with simple, practical advice. It will feature
-            seasonal outfit ideas, beginner-friendly style tips, and curated trends. The goal is to inspire confidence
-            while keeping fashion approachable and realistic for all body types and budgets.</p>
-    </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The website helps users improve their everyday fashion with simple, practical advice. It will feature
+                seasonal outfit ideas, beginner-friendly style tips, and curated trends. The goal is to inspire
+                confidence
+                while keeping fashion approachable and realistic for all body types and budgets.</p>
+        </section>
 
-    <section>
-        <h2>Scenarios</h2>
-        <ul>
-            <li>“I don’t know what clothes to buy for my basic wardrobe. Where should I start?”</li>
-            <li>“What are the latest trends this season that I can wear without spending a fortune?”</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>“I don’t know what clothes to buy for my basic wardrobe. Where should I start?”</li>
+                <li>“What are the latest trends this season that I can wear without spending a fortune?”</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Color Scheme</h2>
-        <p><strong>Rose Pink (#c54b6c):</strong> Used for headings, accents, and buttons to create a warm, stylish
-            vibe.<br>
-            <strong>Soft Cream (#fffaf6):</strong> Used for background to keep the site light and elegant.
-        </p>
-        <div class="color-sample">
-            <div class="color-box rose-pink">#c54b6c</div>
-            <div class="color-box soft-cream">#fffaf6</div>
-        </div>
-    </section>
+        <section>
+            <h2>Color Scheme</h2>
+            <p><strong>Rose Pink (#c54b6c):</strong> Used for headings, accents, and buttons to create a warm, stylish
+                vibe.<br>
+                <strong>Soft Cream (#fffaf6):</strong> Used for background to keep the site light and elegant.
+            </p>
+            <div class="color-sample">
+                <div class="color-box rose-pink">#c54b6c</div>
+                <div class="color-box soft-cream">#fffaf6</div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Typography</h2>
-        <p><strong>Playfair Display (serif):</strong> Used for headings to give a classy, fashion-magazine feel.<br>
-            <strong>Open Sans (sans-serif):</strong> Used for body text for readability and simplicity.
-        </p>
-    </section>
+        <section>
+            <h2>Typography</h2>
+            <p><strong>Playfair Display (serif):</strong> Used for headings to give a classy, fashion-magazine feel.<br>
+                <strong>Open Sans (sans-serif):</strong> Used for body text for readability and simplicity.
+            </p>
+        </section>
 
-    <section>
-        <h2>Wireframes</h2>
-        <p>Below are the wireframe layouts for the StyleSavvy homepage on both mobile and desktop views.</p>
+        <section>
+            <h2>Wireframes</h2>
+            <p>Below are the wireframe layouts for the StyleSavvy homepage on both mobile and desktop views.</p>
 
-        <h3>Mobile View</h3>
-        <img src="chamber/images/wireframe-mobile.png" alt="StyleSavvy Mobile Wireframe" style="max-width:100%; height:auto;">
+            <h3>Mobile View</h3>
+            <img src="chamber/images/wireframe-mobile.png" alt="StyleSavvy Mobile Wireframe"
+                style="max-width:100%; height:auto;">
 
-        <h3>Desktop View</h3>
-        <img src="chamber/images/wireframe-desktop.png" alt="StyleSavvy Desktop Wireframe" style="max-width:100%; height:auto;">
-    </section>
+            <h3>Desktop View</h3>
+            <img src="chamber/images/wireframe-desktop.png" alt="StyleSavvy Desktop Wireframe"
+                style="max-width:100%; height:auto;">
+        </section>
 
-</body>
+        </body>
+    </div>
+
 
 </html>
