@@ -3,48 +3,48 @@
         "title": "Tarkwa Bay Beach",
         "address": "Tarkwa Bay, Lagos",
         "description": "A serene beach ideal for swimming, surfing, and relaxation, accessible by boat.",
-        "image": "images/tarkwa-bay.jpeg"
+        "image": "images/tarkwa-bay.webp"
     },
     {
         "title": "Lekki Conservation Centre",
         "address": "KM 19 Lekki-Epe Expressway, Lagos",
         "description": "Nature reserve with a canopy walkway, monkeys, and picnic areas.",
-        "image": "images/lekki-conservation.jpeg"
+        "image": "images/lekki-conservation.webp"
     },
     {
         "title": "Nike Art Gallery",
         "address": "Lekki, Lagos",
         "description": "One of West Africa's largest art galleries showcasing Nigerian art and culture.",
-        "image": "images/nike-art-gallery.jpeg"
+        "image": "images/nike-art-gallery.webp"
     },
     {
         "title": "National Theatre",
         "address": "Iganmu, Lagos",
         "description": "Iconic cultural center for performing arts and exhibitions.",
-        "image": "images/national-theatre.jpeg"
+        "image": "images/national-theatre.webp"
     },
     {
         "title": "Freedom Park",
         "address": "Broad Street, Lagos",
         "description": "Historic park offering live music, cultural events, and leisure spaces.",
-        "image": "images/freedom-park.jpeg"
+        "image": "images/freedom-park.webp"
     },
     {
         "title": "Eko Atlantic City",
         "address": "Victoria Island, Lagos",
         "description": "Modern urban development built on reclaimed land along the coast.",
-        "image": "images/eko-atlantic.jpeg"
+        "image": "images/eko-atlantic.webp"
     },
     {
         "title": "Balogun Market",
         "address": "Lagos Island, Lagos",
         "description": "Bustling open-air market known for fabrics, clothes, and household items.",
-        "image": "images/balogun-market.jpeg"
+        "image": "images/balogun-market.webp"
     },
     {
         "title": "Terra Kulture",
         "address": "Victoria Island, Lagos",
         "description": "Cultural center featuring art exhibitions, theatre, and a Nigerian restaurant.",
-        "image": "images/terra-kulture.jpeg"
+        "image": "images/terra-kulture.webp"
     }
 ]
