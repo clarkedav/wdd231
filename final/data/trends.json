@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "title": "Monochrome Linen Set",
+      "category": "Casual",
+      "season": "Summer",
+      "description": "Breathable linen top and shorts in soft tones.",
+      "longDescription": "A relaxed matching set that pairs well with sandals or clean sneakers. Add a straw hat to complete the look.",
+      "image": "./images/trends/t01.jpeg"
+    },
+    {
+      "title": "Structured Blazer",
+      "category": "Smart Casual",
+      "season": "Spring",
+      "description": "Crisp blazer over a simple tee and denim.",
+      "longDescription": "A versatile staple that sharpens any outfit. Try pastel colors for a seasonal pop.",
+      "image": "./images/trends/t02.jpeg"
+    },
+    {
+      "title": "Chunky Loafers",
+      "category": "Footwear",
+      "season": "Fall",
+      "description": "A bold yet wearable shoe for daily outfits.",
+      "longDescription": "Works with cropped trousers or midi skirts. Add socks for a preppy twist.",
+      "image": "./images/trends/t03.jpeg"
+    },
+    {
+      "title": "Tailored Trousers",
+      "category": "Workwear",
+      "season": "All",
+      "description": "High-rise trousers with a clean front.",
+      "longDescription": "Dress up with heels or down with sneakers. Choose neutrals for maximum flexibility.",
+      "image": "./images/trends/t04.jpeg"
+    },
+    {
+      "title": "Minimal White Sneakers",
+      "category": "Footwear",
+      "season": "All",
+      "description": "Timeless sneakers that go with everything.",
+      "longDescription": "Keep them clean for a crisp look; pair with jeans, dresses, or trousers.",
+      "image": "./images/trends/t05.jpeg"
+    },
+    {
+      "title": "Denim Midi Skirt",
+      "category": "Casual",
+      "season": "Spring",
+      "description": "A modern alternative to jeans.",
+      "longDescription": "Looks great with tucked tees and lightweight knits.",
+      "image": "./images/trends/t06.jpeg"
+    },
+    {
+      "title": "Quilted Jacket",
+      "category": "Outerwear",
+      "season": "Fall",
+      "description": "Lightweight warmth with texture.",
+      "longDescription": "Layer over hoodies or sweaters; olive and tan are easy to style.",
+      "image": "./images/trends/t07.jpeg"
+    },
+    {
+      "title": "Striped Knit",
+      "category": "Knitwear",
+      "season": "Winter",
+      "description": "Classic stripes in a cozy knit.",
+      "longDescription": "Elevates denim and boots combo. Go oversized for an effortless vibe.",
+      "image": "./images/trends/t08.jpeg"
+    },
+    {
+      "title": "Satin Slip Dress",
+      "category": "Occasion",
+      "season": "Summer",
+      "description": "Simple silhouette, elegant sheen.",
+      "longDescription": "Layer with a blazer or cardigan; strappy sandals for events.",
+      "image": "./images/trends/t09.jpeg"
+    },
+    {
+      "title": "Utility Vest",
+      "category": "Layering",
+      "season": "Spring",
+      "description": "Adds pockets and structure.",
+      "longDescription": "Great over tees or button-downs; balances wide-leg bottoms.",
+      "image": "./images/trends/t10.jpeg"
+    },
+    {
+      "title": "Wide-Leg Jeans",
+      "category": "Denim",
+      "season": "All",
+      "description": "Relaxed leg with high waist.",
+      "longDescription": "Choose a full-length pair to skim the ground for a flattering line.",
+      "image": "./images/trends/t11.jpeg"
+    },
+    {
+      "title": "Chelsea Boots",
+      "category": "Footwear",
+      "season": "Winter",
+      "description": "Weather-ready, sleek profile.",
+      "longDescription": "Works with trousers or dresses; treat leather to last longer.",
+      "image": "./images/trends/t12.jpeg"
+    },
+    {
+      "title": "Trench Coat",
+      "category": "Outerwear",
+      "season": "Spring",
+      "description": "A forever classic layer.",
+      "longDescription": "Belt it for shape; khaki, black, or navy keep it timeless.",
+      "image": "./images/trends/t13.jpeg"
+    },
+    {
+      "title": "Cardigan Set",
+      "category": "Knitwear",
+      "season": "Fall",
+      "description": "Matching knit tank + cardigan.",
+      "longDescription": "Wear together or separately; pair with jeans or skirts.",
+      "image": "./images/trends/t14.jpeg"
+    },
+    {
+      "title": "Athleisure Dress",
+      "category": "Casual",
+      "season": "Summer",
+      "description": "Sporty fabric, easy silhouette.",
+      "longDescription": "Great for travel and weekends; add a cap and sneakers.",
+      "image": "./images/trends/t15.jpeg"
+    }
+  ]
+}

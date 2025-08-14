@@ -1,0 +1,12 @@
+.hero {
+  background: linear-gradient(135deg, #fde8ef, #fffaf6);
+  border: 1px solid #f5d1da;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.hero img {
+  width: 100%; height: auto; border-radius: 10px;
+  border: 1px solid #f1e6e8; margin-top: .7rem;
+}
+.features { margin-top: 1rem; }
+.features li { margin: .3rem 0; }

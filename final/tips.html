@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style Tips — StyleSavvy</title>
+  <meta name="description"
+    content="Beginner-friendly fashion advice: wardrobe basics, color coordination, and body type tips.">
+  <meta name="author" content="Esumei David">
+  <meta property="og:title" content="Style Tips — StyleSavvy">
+  <meta property="og:description" content="Wardrobe basics, color coordination, and practical style ideas.">
+  <meta property="og:image" content="./images/logo.svg">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/wdd231/final/tips.html">
+  <link rel="icon" href="./images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/tips.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header>
+      <div class="brand">
+        <img src="./images/logo.svg" alt="">
+        <h1>StyleSavvy</h1>
+      </div>
+      <button class="nav-toggle">Menu</button>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a class="active" href="./tips.html">Style Tips</a></li>
+          <li><a href="./trends.html">Trends</a></li>
+          <li><a href="./attributions.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Style Tips</h1>
+      <section class="tips">
+        <article class="tip">
+          <h3>Wardrobe Basics</h3>
+          <p>Start with versatile pieces: white tee, dark denim, neutral trousers, clean sneakers, and a blazer.</p>
+        </article>
+        <article class="tip">
+          <h3>Color Coordination</h3>
+          <p>Pick a base (black, navy, beige) and add 1–2 accent colors. Keep patterns simple.</p>
+        </article>
+        <article class="tip">
+          <h3>Fit First</h3>
+          <p>The best outfit looks bad if the fit is off. Hem pants, tailor waistlines, and mind sleeve length.</p>
+        </article>
+        <article class="tip">
+          <h3>Seasonal Layers</h3>
+          <p>Use lightweight layers: tees → shirts → sweaters → jackets. Remove or add as needed.</p>
+        </article>
+        <article class="tip">
+          <h3>Confidence</h3>
+          <p>Wear what makes you feel great. Confidence is the most powerful accessory.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p><strong>Lagos Chamber of Commerce</strong></p>
+          <p>123 Commerce Road, Lagos</p>
+          <p>info@lagoschamber.org</p>
+          <p>+234-905-6919427</p>
+        </div>
+
+        <div class="footer-center">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://x.com" target="_blank" aria-label="Twitter">
+            <img src="images/x.svg" alt="Twitter" class="social-icon">
+          </a>
+        </div>
+
+        <div class="footer-right">
+          <p>WDD 231 Class Project</p>
+          <p>Esumei David</p>
+          <p>© <span id="year"></span> Lagos Chamber of Commerce</p>
+          <p>Last Modified: <span id="lastModified"></span></p>
+          <p><a href="./attributions.html">Attributions</a></p>
+        </div>
+      </div>
+
+      <script type="module" src="./scripts/form.js"></script>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+      </script>
+    </footer>
+  </div>
+</body>
+
+</html>

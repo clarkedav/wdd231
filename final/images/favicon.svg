@@ -1,0 +1,13 @@
+<!-- /final/images/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" aria-labelledby="title">
+  <title>StyleSavvy</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#c54b6c"/>
+      <stop offset="1" stop-color="#e69aa9"/>
+    </linearGradient>
+  </defs>
+  <rect rx="10" ry="10" width="60" height="60" fill="url(#g)"/>
+  <path d="M30 15c8 0 13 5 13 12 0 5-3 9-7 10l5 8h-9l-4-7h-5v7h-8V15h15zM23 32h7c3 0 5-2 5-5s-2-5-5-5h-7v10z" fill="#fff" opacity=".95"/>
+  <text x="75" y="40" font-family="Playfair Display, serif" font-size="28" fill="#c54b6c">StyleSavvy</text>
+</svg>

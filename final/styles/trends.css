@@ -1,0 +1,7 @@
+.filters {
+  display: flex; flex-wrap: wrap; gap: .5rem; align-items: center;
+}
+.filters label { font-weight: 700; }
+.filters select {
+  padding: .45rem .6rem; border: 1px solid #ddd; border-radius: 6px; background: #fff;
+}
