@@ -10,14 +10,14 @@ const lastVisit = localStorage.getItem("lastVisit");
 // Function to format the visit message
 function getVisitMessage(lastTime) {
     if (!lastTime) {
-        return "Welcome! Let us know if you have any questions.";
+        return "welcome! Let us know if you have any questions.";
     }
 
     const millisecondsInDay = 1000 * 60 * 60 * 24;
     const daysBetween = Math.floor((now - lastTime) / millisecondsInDay);
 
     if (daysBetween < 1) {
-        return "Back so soon! Awesome!";
+        return "back so soon! awesome!";
     } else if (daysBetween === 1) {
         return `You last visited ${daysBetween} day ago.`;
     } else {
