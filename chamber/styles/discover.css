@@ -1,0 +1,72 @@
+/* Discover Page Layout */
+#discover-grid {
+    display: grid;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.discover-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for larger views only */
+@media (min-width: 641px) {
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+/* Medium screens (2-column layout) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    #discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+/* Large screens (4-column layout) */
+@media (min-width: 1025px) {
+    #discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+}
+
+.sidebar {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+}

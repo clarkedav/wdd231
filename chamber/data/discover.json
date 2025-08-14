@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Tarkwa Bay Beach",
+        "address": "Tarkwa Bay, Lagos",
+        "description": "A serene beach ideal for swimming, surfing, and relaxation, accessible by boat.",
+        "image": "images/tarkwa-bay.jpeg"
+    },
+    {
+        "title": "Lekki Conservation Centre",
+        "address": "KM 19 Lekki-Epe Expressway, Lagos",
+        "description": "Nature reserve with a canopy walkway, monkeys, and picnic areas.",
+        "image": "images/lekki-conservation.jpeg"
+    },
+    {
+        "title": "Nike Art Gallery",
+        "address": "Lekki, Lagos",
+        "description": "One of West Africa's largest art galleries showcasing Nigerian art and culture.",
+        "image": "images/nike-art-gallery.jpeg"
+    },
+    {
+        "title": "National Theatre",
+        "address": "Iganmu, Lagos",
+        "description": "Iconic cultural center for performing arts and exhibitions.",
+        "image": "images/national-theatre.jpeg"
+    },
+    {
+        "title": "Freedom Park",
+        "address": "Broad Street, Lagos",
+        "description": "Historic park offering live music, cultural events, and leisure spaces.",
+        "image": "images/freedom-park.jpeg"
+    },
+    {
+        "title": "Eko Atlantic City",
+        "address": "Victoria Island, Lagos",
+        "description": "Modern urban development built on reclaimed land along the coast.",
+        "image": "images/eko-atlantic.jpeg"
+    },
+    {
+        "title": "Balogun Market",
+        "address": "Lagos Island, Lagos",
+        "description": "Bustling open-air market known for fabrics, clothes, and household items.",
+        "image": "images/balogun-market.jpeg"
+    },
+    {
+        "title": "Terra Kulture",
+        "address": "Victoria Island, Lagos",
+        "description": "Cultural center featuring art exhibitions, theatre, and a Nigerian restaurant.",
+        "image": "images/terra-kulture.jpeg"
+    }
+]
